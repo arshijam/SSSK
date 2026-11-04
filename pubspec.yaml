@@ -1,0 +1,41 @@
+name: saaf_sarak_saaf_karachi
+description: "Saaf Sarak Saaf Karachi - AI Civic Reporting App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.13.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.27.0
+  cloud_firestore: ^4.15.0
+  firebase_auth: ^4.17.0
+
+  # Image handling & compression
+  image_picker: ^1.0.7
+  flutter_image_compress: ^2.2.0
+  path_provider: ^2.1.2
+
+  # HTTP for OpenAI API
+  http: ^1.2.0
+
+  # Free Maps (OpenStreetMap)
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# 🔥 YAHI ASLI FIX HAI: jni ko 1.1.1 par force karo
+dependency_overrides:
+  jni: ^1.1.1
+  jni_flutter: ^1.0.4+1
+
+flutter:
+  uses-material-design: true
